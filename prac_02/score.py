@@ -4,10 +4,17 @@ Program to determine score status
 """
 
 
+import random
+
+
 def main():
     score = float(input("Enter score: "))
     result = calculate_score(score)
-    print(result)
+    print(f"User score {score} is {result}")
+
+    random_score = random.randint(0, 100)
+    result = calculate_score(random_score)
+    print(f"Random: {random_score} = {result}")
 
 
 def calculate_score(score):
@@ -22,4 +29,3 @@ def calculate_score(score):
 
 
 main()
-
