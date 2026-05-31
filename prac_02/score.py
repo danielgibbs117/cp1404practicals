@@ -12,6 +12,9 @@ def main():
     result = calculate_score(score)
     print(f"User score {score} is {result}")
 
+    if result == "Excellent":
+        print("You get a prize!")
+
     random_score = random.randint(0, 100)
     result = calculate_score(random_score)
     print(f"Random: {random_score} = {result}")
