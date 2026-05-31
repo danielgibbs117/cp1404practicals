@@ -3,6 +3,10 @@ minimum_password_length = 6
 
 def main():
     password = get_password()
+    print_asterisks(password)
+
+
+def print_asterisks(password: str):
     print("*" * len(password))
 
 
