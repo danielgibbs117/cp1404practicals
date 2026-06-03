@@ -44,6 +44,7 @@ def main():
 
 
 def print_menu():
+    """Prints options that user can interact with"""
     print("(G)et valid score")
     print("(P)rint result")
     print("(S)how stars")
@@ -51,6 +52,7 @@ def print_menu():
 
 
 def get_valid_score():
+    """Returns score that is no less than 0 and no greater than 100"""
     score = int(input("Score: "))
 
     while score < 0 or score > 100:
@@ -61,6 +63,7 @@ def get_valid_score():
 
 
 def calculate_score(score):
+    """Determines what grade the score gets"""
     if score < 0 or score > 100:
         return "Invalid score"
     elif score >= 90:
@@ -72,6 +75,7 @@ def calculate_score(score):
 
 
 def print_asterisks(score: int):
+    """Prints asterisks for every integer in the score"""
     print("*" * score)
 
 
