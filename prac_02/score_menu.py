@@ -17,6 +17,32 @@ while choice != <quit option>
 """
 
 
+def main():
+    score = get_valid_score()
+
+    print_menu()
+    choice = input("Choice: ")
+
+    while choice != "Q":
+        if choice == "G":
+            score = get_valid_score()
+
+        elif choice == "P":
+            result = calculate_score(score)
+            print(f"Score {score} is {result}")
+
+        elif choice == "S":
+            print_asterisks(score)
+
+        else:
+            print("Invalid")
+
+        print_menu()
+        choice = input("Choice: ")
+
+    print("Farewell")
+
+
 def print_menu():
     print("(G)et valid score")
     print("(P)rint result")
@@ -47,3 +73,6 @@ def calculate_score(score):
 
 def print_asterisks(score: int):
     print("*" * score)
+
+
+main()
