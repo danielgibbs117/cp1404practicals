@@ -75,7 +75,7 @@ def calculate_score(score):
 
 
 def print_asterisks(score: int):
-    """Prints asterisks for every integer in the score"""
+    """Prints asterisks equal to the score"""
     print("*" * score)
 
 
