@@ -17,3 +17,11 @@ while choice != <quit option>
 """
 
 
+def get_valid_score():
+    score = int(input("Score: "))
+
+    while score < 0 or score > 100:
+        print("Invalid score")
+        score = int(input("Score: "))
+
+    return score
