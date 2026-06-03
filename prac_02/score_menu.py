@@ -17,6 +17,13 @@ while choice != <quit option>
 """
 
 
+def print_menu():
+    print("(G)et valid score")
+    print("(P)rint result")
+    print("(S)how stars")
+    print("(Q)uit")
+
+
 def get_valid_score():
     score = int(input("Score: "))
 
