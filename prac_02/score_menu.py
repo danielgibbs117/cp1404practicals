@@ -36,3 +36,7 @@ def calculate_score(score):
         return "Passable"
     else:
         return "Bad"
+
+
+def print_asterisks(score: int):
+    print("*" * score)
