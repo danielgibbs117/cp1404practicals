@@ -8,9 +8,8 @@ FILENAME = "subject_data.txt"
 
 def main():
     """Program to load and display subject data from file."""
-    data = load_data(FILENAME)
-    display_subject_details(data)
-    print(data)
+    subjects = load_data(FILENAME)
+    display_subject_details(subjects)
 
 
 def load_data(filename=FILENAME):
@@ -24,9 +23,9 @@ def load_data(filename=FILENAME):
         parts = line.split(',')  # Separate the data into its parts
         print(parts)  # See what the parts look like (notice the integer is a string)
         # Make the number an integer as part of a new, poorly named, list
-        data = [parts[0], parts[1], int(parts[2])]
-        subject_data.append(data)
-        print(data)  # See if that worked
+        subject = [parts[0], parts[1], int(parts[2])]
+        subject_data.append(subject)
+        print(subject)  # See if that worked
         print("----------")
     input_file.close()
     return subject_data
@@ -41,3 +40,5 @@ def display_subject_details(subject_data):
 
 
 main()
+
+
