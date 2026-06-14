@@ -14,13 +14,13 @@ def main():
         income = float(input(f"Enter income for month {month}: "))
         incomes.append(income)
 
-    print_income_report(incomes, number_of_months)
+    print_income_report(incomes)
 
 
-def print_income_report(incomes: list[Any], number_of_months: int):
+def print_income_report(incomes):
     print("\nIncome Report\n-------------")
     total = 0
-    for month in range(1, number_of_months + 1):
+    for month in range(1, len(incomes) + 1):
         income = incomes[month - 1]
         total += income
         print(f"Month {month:2} - Income: ${income:10.2f} Total: ${total:10.2f}")
