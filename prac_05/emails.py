@@ -1,7 +1,7 @@
 """
 Word Occurrences
-Estimate:  minutes
-Actual:    minutes
+Estimate:  40 minutes
+Actual:    25 minutes
 """
 
 
