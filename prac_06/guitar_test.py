@@ -1,3 +1,8 @@
+"""
+Estimate: 10 minutes
+Actual: 15 minutes
+"""
+
 import datetime
 
 from prac_06.guitar import Guitar
